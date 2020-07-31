@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+/*what we are selecting*/
+
+h1 {
+    /* How to style it*/
+    color: whitesmoke;
+    text-transform: lowercase;
+    font-weight: 100;
+    border-bottom: 1px solid lightcoral;
+    width: 50%;
+    height: 10vh;
+    line-height: 15vh;
+}
+
+body {
+    background-color: black;
+    color: gray;
+    font-family: 'Montserrat';
+}
+
+h6 {
+    font-family: Geneva;
+    font-weight: 100;
+}
+
+h4 {
+    font-family: 'Trebuchet MS';
+    font-weight: 100;
+    font-style: oblique;
+    color: rgb(45, 53, 53);
+}
+
+h4:hover {
+    font-size: 16px;
+    color: gray;
+    transition: 0.2s;
+}
+
+img {
+    height: 250px;
+    border-radius: 50%;
+}
+
+button {
+    margin: 30px auto 0;
+    border: 2px solid;
+    font-style: oblique;
+    border-color: rgb(29, 58, 58);
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 35%;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: crimson;
+    color: whitesmoke;
+    transition: 0.2s;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+#container {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.p0 {
+    position: relative;
+    z-index: 1;
+}
+
+.p1 {
+    position: absolute;
+    right: 55%;
+    opacity: 0.2;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: -30%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+.p2 {
+    position: absolute;
+    left: 55%;
+    opacity: 0.2;
+    animation-duration: 1s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: -30%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
